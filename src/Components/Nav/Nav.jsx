@@ -16,7 +16,7 @@ const Nav = () => {
       </li>
       <li>
         <NavLink
-          to="/aboutMe"
+          to="#aboutMe"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#13b0f5]" : ""
           }
