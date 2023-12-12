@@ -4,6 +4,9 @@ import profile from "../../assets/banner/profile.jpeg";
 import Container from "../Container/Container";
 
 const Banner = () => {
+  const resumePath =
+    "https://drive.google.com/file/d/100hxEXB37e3HXreM7apQdDmLYOQOD2TC/view?usp=sharing";
+
   return (
     <div id="aboutMe">
       <Container>
@@ -32,9 +35,15 @@ const Banner = () => {
                   </span>
                 </h1>
                 <p className="my-5 ">
-                I'm a junior Frontend based web developer. <br />I create interactive web experiences <br />  combining HTML5, CSS3, and JavaScript. <br /> Want to learn more about MERN (MongoDB, Express.js, React.js, Node.js),
+                  I'm a junior Frontend based web developer. <br />I create
+                  interactive web experiences <br /> combining HTML5, CSS3, and
+                  JavaScript. <br /> Want to learn more about MERN (MongoDB,
+                  Express.js, React.js, Node.js),
                 </p>
-                <button className="btn btn-primary text-white"><a href="../../assets/resume/resume.pdf" download="arif-resume">Get Resume</a></button>
+              
+                <a href={resumePath} className="btn btn-primary text-white" download="w3logo">
+                  Get Resume
+                </a>
               </div>
               <div className="md:max-w-[150px] lg:max-w-xs">
                 <img
